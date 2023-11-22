@@ -1,0 +1,539 @@
+/* generic styles */
+@font-face {
+  font-family: Muli;
+  src: url(./Font/Mulish-VariableFont_wght.ttf);
+}
+body {
+  font-family: Muli;
+}
+.container {
+  box-sizing: border-box;
+  width: 76%;
+  margin: auto;
+  margin-top: 2.4rem;
+}
+
+/* variables */
+:root {
+  --font-size-smaller: 0.85rem;
+  --font-size-small: 0.9rem;
+  --font-size-medium: 1.2rem;
+  --font-size-between: 1.3rem;
+  --font-size-large: 2rem;
+  --font-size-larger: 2.6rem;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+h1 {
+  font-size: var(--font-size-larger);
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: var(--font-size-large);
+}
+
+h3 {
+  font-size: var(--font-size-between);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+}
+
+h5 {
+  font-size: var(--font-size-small);
+}
+h6 {
+  font-size: var(--font-size-smaller);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-weight-bold);
+}
+
+h4,
+h6 {
+  font-weight: var(--font-weight-light);
+}
+
+.h3 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-between);
+}
+
+.h6 {
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-smaller);
+}
+
+.h4 {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-light);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 3.3rem;
+  padding: 0.72rem 2.1rem;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0.09rem solid #458ff6;
+}
+
+.bg {
+  position: absolute;
+}
+
+/* end generic styles */
+
+/* hover on li  */
+li:hover {
+  background-color: #7d79872e;
+}
+
+/* button hover */
+
+.btn-primary:hover {
+  color: #458ff6;
+  background-color: white;
+}
+
+.btn-secondary:hover {
+  background: #458ff6;
+  color: white;
+}
+
+/* start nav styling */
+
+.main-navigation {
+  justify-content: space-between;
+}
+
+/* styling the logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-initial {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(69, 143, 246, 1);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+/* styling the nav list */
+nav{
+  margin-bottom: 1.8rem;
+
+}
+.nav-list li {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.02rem;
+  color: black;
+  opacity: 0.4;
+  font-size: 0.95rem;
+}
+.nav-list a {
+  text-decoration: none;
+}
+li a:visited {
+text-decoration: none;
+color: initial;
+}
+
+#home {
+  opacity: 1;
+  font-weight: var(--font-weight-bold);
+}
+
+/* end nav styles */
+
+/* start header section */
+
+.header {
+  margin-bottom: 9rem;
+  /* margin-top: 1.8rem; */
+  justify-content: space-between;
+}
+.header div {
+  width: 50%;
+}
+.header div p {
+  padding: 1.5rem 0rem 3rem;
+  color: #7d7987;
+  line-height: 2rem;
+}
+
+.img-primary {
+  max-width: 100%;
+}
+
+.btn-primary {
+  background: #458ff6;
+  color: white;
+}
+/* end of header section */
+
+/* start service */
+.services{
+  margin-bottom: 10.8rem;
+}
+.services,
+.service-text,
+.service-title {
+  flex-direction: column;
+}
+.service-text {
+  margin-bottom: 3rem;
+}
+.service-title::after {
+  content: url(images/Rectangle\ 2.png);
+  padding-bottom: 1.2rem;
+}
+.service-text p {
+  font-weight: 250;
+  text-align: center;
+  color: #7d7987;
+  /* padding-top: 1.2rem; */
+  line-height: 1.8rem;
+}
+.cards {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  height: 18rem;
+  width: 28%;
+  padding: 2.4rem 1.68rem 1.8rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: white;
+  margin: 0.6rem;
+  box-shadow: 0.6rem 2.4rem 3rem 0rem rgba(229, 233, 246, 0.489);
+}
+.card img {
+  height: 4.2rem;
+  width: initial;
+}
+.card h3 {
+  line-height: 3.36rem;
+}
+.card-body {
+  line-height: 1.68rem;
+  text-align: left;
+  color: #7d7987;
+}
+#btn-secondary {
+  margin: 3.6rem;
+}
+
+.btn-secondary {
+  color: #458ff6;
+  background: white;
+}
+/* end service srtyle */
+
+/* providers  and download section styling */
+#providers {
+  /* margin-top: 10.8rem; */
+  justify-content: space-between;
+}
+.first-providers{
+    margin-bottom: 10.8rem;
+
+}
+.providers-text {
+  flex-direction: column;
+  align-items: start;
+  margin: 3.6rem;
+  max-width: 33%;
+}
+.providers-text h2 {
+  color: #000;
+  line-height: 3rem;
+  padding-bottom: 1.2rem;
+}
+
+.providers-text h2::after {
+  content: url(images/Rectangle\ 2.png);
+  color: black;
+  font-weight: bolder;
+  display: block;
+}
+.providers-text h5 {
+  color: #7d7987;
+  font-weight: 250;
+  line-height: 1.7rem;
+}
+
+.download-btn::after {
+  content: url("./images/Vector\ \(1\).png");
+  color: black;
+  display: inline;
+  position: relative;
+  top: 0.18rem;
+  left: 0.48rem;
+}
+
+.img-secondary-container {
+  width: 90%;
+  margin-right: 0.6rem;
+}
+
+.img-secondary {
+  max-width: 93%;
+}
+
+/* review styling */
+.review {
+  position: relative;
+  padding: 1.8rem;
+  height: 22rem;
+  margin: 10.2rem auto 18.2rem auto; 
+  width: 93%;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  background: linear-gradient(208deg, #67c3f3 9.05%, #5a98f2 76.74%);
+}
+
+.review div h2 {
+  color: #fff;
+  line-height: 2.2rem;
+  flex-direction: column;
+}
+
+.review div h2::after {
+  padding-bottom: 1.8rem;
+  content: url(images/Rectangle\ 17.png);
+}
+
+.img-3 {
+  border-radius: 50%;
+  border: 0.24rem solid white;
+  max-width: 100%;
+}
+
+.img-3-container {
+  padding: 0.6rem;
+  justify-content: center;
+  width: 15%;
+}
+
+.review-text-body {
+  font-size: 1rem;
+  width: 38%;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.review-text {
+  padding: 0.96rem;
+  width: 38%;
+}
+.review-text h4 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.review-text h5 {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -3rem;
+  width: 30%;
+}
+
+/* articles styling */
+.articles {
+  flex-direction: column;
+  /* margin-top: 18rem; */
+  margin-bottom: 18rem;
+}
+.article-title {
+  flex-direction: column;
+}
+.article-title::after {
+  content: url(./images/Rectangle\ 2.png);
+  padding-bottom: 1.8rem;
+}
+.articles .cards .card h3 {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.articles .cards .card div img {
+  width: 100%;
+  height: 100%;
+}
+.articles .cards .card {
+  height: auto;
+  padding: 0rem 0rem 1.2rem 0rem;
+  margin: 1.2rem;
+}
+
+.articles .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.article-text {
+  padding: 1.2rem 1.2rem 1.8rem;
+  flex-direction: column;
+  align-items: start;
+}
+
+.article-text a {
+  color: #4089ed;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  padding-top: 0.6rem;
+  text-decoration: none;
+  line-height: 1.8rem;
+}
+
+.article-text a::after {
+  content: url("./images/Vector\ \(2\).png");
+  padding-left: 0.6rem;
+}
+
+/* footer styling  */
+.footer {
+  max-width: 100%;
+  height: 24rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(183deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.footer div ul li {
+  color: #fff;
+  font-size: 0.96rem;
+  font-weight: 300;
+  line-height: 2.28rem;
+}
+
+#footer-text {
+  padding: 2.3rem;
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-bottom: 0.66rem;
+}
+
+#footer-text .brand-name {
+  color: #fff;
+}
+#footer-text h5 {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6rem;
+  padding: 0.9rem;
+}
+footer h4 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+#footer-text .brand-initial {
+  background-color: white;
+  color: #5b9bf3;
+}
+
+/* styling the element */
+
+.element-primary {
+  top: 130px;
+  left: -50px;
+  width: 9%;
+}
+
+.element-secondary {
+  top: 691px;
+  right: 98px;
+  left: 0;
+  width: 50%;
+  z-index: -10;
+}
+.element-third {
+  top: 1108px;
+  right: 170px;
+  z-index: -10;
+}
+
+.element-forth {
+  z-index: -10;
+  position: absolute;
+  top: 2300px;
+  right: 0;
+}
+
+.element-fifth {
+  z-index: 10;
+  position: absolute;
+  top: 3169px;
+  right: 146px;
+}
+
+.element-sixth {
+  z-index: -10;
+  position: absolute;
+  top: 3338px;
+  left: 146px;
+}
+
+.element-seventh {
+  z-index: -10;
+  position: absolute;
+  top: 3755px;
+  right: 0;
+  width: 33%;
+}
+
+.element-eigth {
+  z-index: -10;
+  position: absolute;
+  top: 3893px;
+  left: 145px;
+}
+
+.element-ningth {
+  z-index: -10;
+  position: absolute;
+  top: 4772px;
+  right: 50px;
+  width: 9%;
+}
+
+.element-tenth {
+  z-index: 10;
+  position: absolute;
+  bottom: -4579px;
+  left: 0;
+  width: 8%;
+}
